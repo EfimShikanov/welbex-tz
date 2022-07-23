@@ -1,0 +1,27 @@
+.filter
+	display: flex
+	flex-direction: column
+	position: relative
+	
+	.filterValue
+		background-color: blue
+		color: white
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 90px
+		padding: 5px
+		border-radius: 4px
+		cursor: pointer
+		
+		&.active
+			border-radius: 4px 4px 0 0
+		
+		.dropdownIcon
+			transition: all 0.3s
+		
+		.toggleDown
+			transform: rotate(0deg)
+		
+		.toggleUp
+			transform: rotate(180deg)
